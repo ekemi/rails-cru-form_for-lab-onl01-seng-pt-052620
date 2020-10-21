@@ -1,4 +1,4 @@
-class AtristController <ApplicationController
+class AtristsController <ApplicationController
 
 def create
   @artist = Artist.create(artist_params)
