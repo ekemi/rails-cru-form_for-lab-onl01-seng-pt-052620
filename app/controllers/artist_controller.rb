@@ -8,4 +8,7 @@ private
 def artist_params
   params.require(:artists).permit(:name,:bio)
 end
+def show 
+@artist = Artist.find(params[:id])
+end
 end
