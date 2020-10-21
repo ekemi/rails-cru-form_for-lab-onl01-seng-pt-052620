@@ -2,7 +2,7 @@ class AtristController <ApplicationController
 
 def create
   @artist = Artist.create(artist_params)
-  redirect_to(@artist)
+  redirect_to artist_path(@artist)
 end
 private
 def artist_params
@@ -11,4 +11,12 @@ end
 def show
 @artist = Artist.find(params[:id])
 end
+def new
+  @artist = Artist.new
+end
+
+def edit
+@artist = Artist.find(params[:id])
+end
+
 end
