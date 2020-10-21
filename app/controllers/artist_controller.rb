@@ -18,7 +18,7 @@ end
 def edit
 @artist = Artist.find(params[:id])
 end
-def update 
+def update
 @artist = Artist.find(params[:id])
 @artist.update(artist_params)
 redirect_to artist_path(@artist)
