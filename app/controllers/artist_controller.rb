@@ -1,0 +1,11 @@
+class AtristController <ApplicationController
+
+def create
+  @artist = Artist.create(artist_params)
+  redirect_to(@artist)
+end
+private
+def artist_params
+  params.require(:artists).permit(:name,:bio)
+end
+end
