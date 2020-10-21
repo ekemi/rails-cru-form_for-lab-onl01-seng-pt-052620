@@ -23,6 +23,6 @@ end
 
 private
 def artist_params
-  params.require(:artists).permit(:name,:bio)
+  params.require(:artists).permit(:name, :bio)
 end
 end
